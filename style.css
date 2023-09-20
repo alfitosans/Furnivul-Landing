@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+nav {
+  width: 100%;
+  height: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background: #023047;
+  align-items: center;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+}
+
+nav ul li {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+nav ul li a {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+button {
+  padding: 10px;
+  border: 3px #023047 solid;
+  border-radius: 8px;
+  background-color: rgba(255, 183, 3, 1);
+  gap: 50px;
+}
+
+button > a {
+  color: #023047;
+  text-decoration: none;
+  font-weight: 1000;
+  font-weight: 600;
+}
+
+.button-login {
+  background-color: transparent !important;
+}
+
+.button-login a {
+  background-color: transparent !important;
+  border: 3px #023047 solid;
+  color: #ffffff !important;
+}
+
+.button-login:hover {
+  background-color: rgba(255, 183, 3, 1);
+  color: #023047;
+  border: 1px rgba(255, 183, 3, 1) solid;
+}
+
+/* main */
+
+/* hero section */
+
+.container-hero-section {
+  margin-top: 20px;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 44px;
+  display: inline-flex;
+}
+
+.second-hero-section {
+  width: 917px;
+  height: 677px;
+  background: linear-gradient(
+    360deg,
+    rgba(0, 0, 0, 0.5) 26%,
+    rgba(0, 0, 0, 0) 82%
+  );
+  border-radius: 10px;
+}
+
+.cta-hero {
+  width: 363px;
+  height: 677px;
+  position: relative;
+  background: #023047;
+  border-radius: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.text-cta-hero {
+  width: 225px;
+  height: 179px;
+  color: white;
+  font-size: 40px;
+  font-family: Plus Jakarta Sans;
+  font-weight: 800;
+  line-height: 60px;
+  word-wrap: break-word;
+}
+
+.text-cta-hero-2 {
+  width: 220px;
+  color: #ffb703;
+  font-size: 14px;
+  font-family: Plus Jakarta Sans;
+  font-weight: 800;
+  line-height: 21px;
+  word-wrap: break-word;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.vector-cta {
+  width: 122px;
+  height: 122px;
+}
+
+/* /card carousel / */
+.title-section-3 {
+  width: 100%;
+  top: 1770px;
+  display: flex;
+  position: absolute;
+  font-size: 32px;
+  font-family: Plus Jakarta Sans;
+  font-weight: 800;
+  line-height: 60px;
+  color: #ffff;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+/* swiper */
+
+.swiper {
+  top: 700px;
+  width: 1360px;
+  height: 100%;
+}
+
+.swiper-slide {
+  margin: 10px;
+  border: 1px solid #023047;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 18px;
+  background-color: #023047;
+}
+
+.swiper-slide-content {
+  text-align: left;
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #ffffff;
+}
+
+/* footer */
+footer {
+  margin-top: 720px;
+  width: 100%;
+  padding: 1rem;
+  background-color: #023047;
+  color: white;
+}
+footer .foot-container,
+footer .foot-socials {
+  display: flex;
+  width: 80%;
+  margin: 1rem auto;
+  border-top: white solid 1px;
+  text-decoration: none;
+}
+footer .foot-container .logo-desc {
+  margin: 1.5rem auto;
+}
+footer .foot-container .logo-desc p {
+  margin-top: 1rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+footer .foot-container .logo-desc p span {
+  color: #ffb703;
+}
+footer .foot-container .foot-links {
+  display: flex;
+  margin: 2rem auto;
+}
+footer .foot-container .foot-links a {
+  display: flex;
+  color: white;
+  margin: 1rem 4rem;
+  text-decoration: none;
+}
+
+footer .foot-container .foot-links a:first-child {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  width: max-content;
+}
+footer .foot-socials {
+  justify-content: space-between;
+  align-items: end;
+  margin: 0 auto;
+}
+footer .foot-socials .socials {
+  display: flex;
+  margin: 2rem 1rem 0 1rem;
+}
+footer .foot-socials .socials div {
+  margin: 0 0.5rem;
+}
+footer .foot-socials .socials div svg {
+  margin: 0 0rem;
+  color: #ffb703;
+}
+
+@media (max-width: 760px) {
+  .swiper-button-next {
+    right: 20px;
+    transform: rotate(90deg);
+  }
+
+  .swiper-button-prev {
+    left: 20px;
+    transform: rotate(90deg);
+  }
+}
